@@ -1,9 +1,24 @@
 public class Submission {
-    public final String roll;
-    public final String code;
-    public final String filename;
 
-    public Submission(String roll, String code, String filename) {
-        this.roll = roll; this.code = code; this.filename = filename;
+    private final String id;
+    private final String code;
+    private final String fileName;
+
+    public Submission(String id, String code, String fileName) {
+        this.id = id;
+        this.code = code;
+        this.fileName = fileName;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public String getFileName() {
+        return fileName;
     }
 }

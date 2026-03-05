@@ -7,3 +7,4 @@ public interface SmartClassroomDevice {
     int scanAttendance();
     void connectInput(String port);
 }
+
