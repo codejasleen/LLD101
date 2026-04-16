@@ -29,13 +29,13 @@ public class ReportProxy implements Report {
             return;
         }
 
-        // 2️⃣ Lazy loading
+        // Lazy loading
         if (realReport == null) {
             System.out.println("Proxy: creating RealReport (lazy loading)");
             realReport = new RealReport(reportId, title, classification);
         }
 
-        // 3️⃣ Reuse cached object
+        //  Reuse cached object
         realReport.display(user);
     }
 }
